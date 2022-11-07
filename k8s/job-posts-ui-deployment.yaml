@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: job-posts-ui-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: posts-ui-lbl
+  template:
+    metadata:
+      labels:
+        app: posts-ui-lbl
+    spec:
+      containers:
+          - name: job-posts-ui
+            image: job-posts-ui/playground:0.0.1
