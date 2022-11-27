@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: Pod
-metadata:
-  name: job-posts-ui
-spec:
-  containers:
-    - name: job-posts-ui
-      image: job-posts-ui/playground:0.0.1

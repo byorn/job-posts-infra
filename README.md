@@ -19,6 +19,9 @@ common commands
 -- run the docker image and execute command
 + docker run -it [image] sh
 
+-- push to docker hub
++ docker push [imagetag]  should be like byorn/name which should also exist as a repository in docker hub
+
 # kubernetes
 -- view pods and deployhments
 + kubectl get pods
@@ -35,4 +38,7 @@ common commands
 
 -- run a deployment or pod
 + kubectl apply -f [filename.yml]
+
+-- rolling out a deployment
++ kubectl rollout restart deployment [deployment-name]
 
